@@ -1,0 +1,116 @@
+#bg-content {
+    background : url(pic-yoga.jpg);
+}
+#logo{
+    height:3rem;
+    margin-left: -6rem;
+}
+#bg-header{
+    background :#61625d;
+}
+h4{
+    font-size: 2rem;
+    font-weight: normal;
+}
+button{
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height:2.5rem;
+    width: 6rem;
+    font-size: 16px;
+}
+#content{
+    height: 17rem;
+    margin-top: 2rem;
+}
+#design{
+    height:4rem;
+}
+#b-design{
+    height: 6rem;
+    width: 6rem;
+    border-style: solid;
+    border-radius: 50%;
+    margin: auto;
+    border-color: #61625d;
+}
+p{
+    font-weight: normal;
+}
+#content-2{
+    margin: 2rem 0rem;
+    text-align: center;
+    opacity:1;
+}
+#bg-container{
+    background: linear-gradient(transparent, white),url(pic-yoga.jpg);
+}
+input{
+    margin: 2rem;
+    border-radius: 8px;
+    height:2rem;
+}
+textarea{
+    width:55%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+#up-arrow{
+    height: 50px;
+    width: 50px;
+    margin-left: 45%;
+    margin-bottom: -5%;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+#bottom-border{
+    border-bottom: 1px solid #000000;
+}
+#bottom-top{
+    border-top: 1px solid #000000;
+    margin-top:1rem;
+}
+#content-container{
+    margin-top: 0;
+}
+#arrow-submit{
+    position: absolute;
+    background: #61625d;
+    padding: 10px 10px 10px 12px;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: -8%;
+}
+#one{
+    flex:1;
+}
+@media all and (max-width: 600px) {
+    #logo{
+        height:8rem;
+        margin-left: 0rem;
+   }
+    #content-container{
+        margin-top: 8rem;
+   }
+    #bg-container{
+        margin-top: 25rem;
+   }
+    input{
+        width:80%;
+   }
+    textarea{
+        width:80%;
+   }
+    #arrow-submit{
+        margin-left: 43%;
+        margin-top: -15%;
+   }
+    #up-arrow{
+        margin-bottom: -10%;
+   }
+    #one{
+        margin-top:1.3rem;
+   }
+}

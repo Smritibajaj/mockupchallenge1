@@ -1,0 +1,131 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.screen{
+    max-width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    margin: 0;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+}
+.container a:hover {
+    background: darken(deepskyblue, 2%);
+}
+.container a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+.img-flex{
+    flex-grow:1;
+}
+.font{
+    font-size: 1rem;
+}
+.h-header{
+    height : 10%;
+}
+.h-content{
+    height : 90%;
+}
+.h-container{
+    height : 100%;
+}
+.h-footer{
+    height : 30%;
+}
+.center-box{
+    margin-left: -10rem;
+    margin-top: 10rem;
+}
+.m-left{
+    margin-left:5rem;
+}
+.m-top{
+    margin-top:5rem;
+}
+.item-1{
+    flex:1;
+    margin: 1rem;
+    background-color: black;
+}
+.item-2{
+    display:flex;
+    flex:2;
+    margin: 1rem;
+    background-color: black;
+    justify-content: space-evenly;
+}
+.item{
+    flex:1;
+    margin: .25rem;
+    background-color: blue;
+    text-align: center;
+}
+.container-80{
+    width: 80%;
+}
+.wrapper {
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+.heigh{
+    width:33%;
+}
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1 auto;
+   }
+}
+@media all and (max-width: 800px) {
+    .container {
+        justify-content: space-around;
+   }
+}
+@media all and (max-width: 600px) {
+    .container {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+   }
+    .h-header {
+        height: initial !important;
+   }
+    .container a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+   }
+    .container li:last-of-type a {
+        border-bottom: none;
+   }
+    .img-flex{
+        flex-grow:0;
+   }
+    .center-box{
+        margin-left: 0rem;
+        margin-top: 0rem;
+   }
+    .container-80{
+        width:100%;
+   }
+}
